@@ -91,36 +91,49 @@
                 </fieldset>
 
                 <fieldset>
-                    <form id="horario">
+                    <form>
                         <legend>Horários disponíveis</legend>
-                        <div class="select-block">
-                            <label for="subject">Dia da semana</label>
-                            <select name="subject" id="subject" required>
-                                <option value="">Selecione o dia</option>
-                                <option value="1">Domingo</option>
-                                <option value="2">Segunda</option>
-                                <option value="3">Terça</option>
-                                <option value="4">Quarta</option>
-                                <option value="5">Quinta</option>
-                                <option value="6">Sexta</option>
-                                <option value="7">Sábado</option>
-                            </select>
-                        </div>
+                        <div id="schedule-item">
+                            <div class="select-block">
+                                <label for="subject">Dia da semana</label>
+                                <select name="subject" id="subject" required>
+                                    <option value="">Selecione o dia</option>
+                                    <option value="1">Domingo</option>
+                                    <option value="2">Segunda</option>
+                                    <option value="3">Terça</option>
+                                    <option value="4">Quarta</option>
+                                    <option value="5">Quinta</option>
+                                    <option value="6">Sexta</option>
+                                    <option value="7">Sábado</option>
+                                </select>
+                            </div>
 
-                        <div class="input-block">
-                            <label for="inicio_aula">Das</label>
-                            <input type="inicio_aula" id="inicio_aula" type="time" required>
-                        </div>
+                            <div class="input-block">
+                                <label for="inicio_aula">Das</label>
+                                <input type="inicio_aula" id="inicio_aula" type="time" required>
+                            </div>
 
-                        <div class="input-block">
-                            <label for="termino_aula">Até</label>
-                            <input type="termino_aula" id="termino_aula" type="time" required>
+                            <div class="input-block">
+                                <label for="termino_aula">Até</label>
+                                <input type="termino_aula" id="termino_aula" type="time" required>
+                            </div>
                         </div>
                     </form>
                 </fieldset>
-
             </form>
+
+            <footer>
+                
+                <p>
+                    <img src="/images/icons/warning.svg" alt="Aviso">
+                    Importante!<br />
+                    Preencha todos os dados
+                </p>
+                <button type="submit">Salvar cadastro</button>
+            </footer>
         </main>
+
+        
     </div>
     
 </body>
